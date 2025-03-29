@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* Hiệu ứng chữ lấp lánh */
+@keyframes rainbowText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffee, #2400ff, #7a00ff, #ff00b3);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowText 6s infinite linear;
+}
+
+.hidden {
+    display: none;
+}
+
+.buttons button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.buttons button:disabled {
+    background-color: #A9A9A9;
+    cursor: not-allowed;
+}
+
+.dark-mode {
+    background: black;
+    color: white;
+}
